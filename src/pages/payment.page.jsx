@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { clearCart } from "@/lib/features/cartSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { toast } from "sonner";
-import CartItem from "@/components/ui/CartItem";
+import CartItem from "@/components/ui/cartItem";
 import { useNavigate, Navigate} from "react-router"; 
 
 function PaymentPage() {
