@@ -5,7 +5,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const Api = createApi({
   reducerPath: "Api",
   baseQuery: fetchBaseQuery({ 
-    baseUrl: "https://fed-storefront-backend-praveen.onrender.com",
+    baseUrl: "https://fed-storefront-backend-praveen.onrender.com/api",
     prepareHeaders: async (headers) => {
       try {
         if (window.Clerk?.session) {
