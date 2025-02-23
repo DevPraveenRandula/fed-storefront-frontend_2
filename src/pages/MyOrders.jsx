@@ -11,7 +11,7 @@ const MyOrdersPage = () => {
         const token = await getToken();
         if (!token) throw new Error("No authentication token found");
 
-        const response = await fetch("http://localhost:8000/api/orders/user/my-orders", {
+        const response = await fetch("https://fed-storefront-backend-praveen.onrender.com/api/orders/user/my-orders", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,
